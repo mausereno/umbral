@@ -3,89 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umbral Tostadores</title>
-
+  <title>Umbral Tostadores | Editorial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Tipografía editorial -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header class="header">
   <div class="logo">UMBRAL</div>
+  <nav class="nav-minimal">Tostaduría Independiente</nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-text">
+  <div class="hero-slides">
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085')"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e')"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1442512595632-7b6169c2120e')"></div>
+  </div>
+  <div class="hero-content">
     <h1>
-      Entre el grano<br>
-      y el fuego<br>
+      <span class="italic">Entre</span> el grano<br>
+      y el fuego <span class="thin">—</span><br>
       existe un instante
     </h1>
   </div>
 </section>
 
-<!-- MANIFIESTO -->
-<section class="manifesto">
-  <div class="text">
-    <p>
-      No tostamos café.  
-      Observamos el momento en que cambia.
-    </p>
-  </div>
-</section>
+<main class="grid-container">
+  <section class="manifesto border-bottom">
+    <div class="label">01 / Concepto</div>
+    <p>No tostamos café. Observamos el momento exacto en que la materia se transforma en memoria.</p>
+  </section>
 
-<!-- STORY SPLIT -->
-<section class="split">
-  <div class="image"></div>
-  <div class="content">
-    <h2>Precisión</h2>
-    <p>
-      Cada curva de tostado es una decisión.
-      Temperatura, aire y tiempo dialogan hasta encontrar el equilibrio.
-    </p>
-  </div>
-</section>
+  <section class="split border-bottom">
+    <div class="image-box border-right">
+       <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Tostado">
+    </div>
+    <div class="content">
+      <div class="label">02 / Método</div>
+      <h2>Precisión</h2>
+      <p>Cada curva de tostado es una decisión. Temperatura y tiempo dialogan hasta encontrar el equilibrio.</p>
+    </div>
+  </section>
 
-<!-- CAFÉS -->
-<section class="coffee">
-  <h2>Cafés</h2>
+  <section class="coffee border-bottom">
+    <div class="label">03 / Selección</div>
+    <div class="coffee-grid">
+      <div class="coffee-item border-right">
+        <span class="origin">Colombia</span>
+        <h3>Huila</h3>
+        <p>Panela · Frutos rojos · Cacao</p>
+      </div>
+      <div class="coffee-item border-right">
+        <span class="origin">Etiopía</span>
+        <h3>Natural</h3>
+        <p>Arándano · Floral · Brillante</p>
+      </div>
+      <div class="coffee-item">
+        <span class="origin">México</span>
+        <h3>Chiapas</h3>
+        <p>Nuez · Chocolate · Limpio</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="coffee-item">
-    <h3>Colombia · Huila</h3>
-    <p>Panela · frutos rojos · cacao</p>
-  </div>
+  <section class="quote border-bottom">
+    <p>“El tostado no transforma el café, revela lo que ya estaba ahí.”</p>
+  </section>
+</main>
 
-  <div class="coffee-item">
-    <h3>Etiopía · Natural</h3>
-    <p>Arándano · floral · brillante</p>
-  </div>
-
-  <div class="coffee-item">
-    <h3>México · Chiapas</h3>
-    <p>Nuez · chocolate · limpio</p>
-  </div>
-</section>
-
-<!-- CITA -->
-<section class="quote">
-  <p>
-    “El tostado no transforma el café,  
-    revela lo que ya estaba ahí.”
-  </p>
-</section>
-
-<!-- CTA -->
 <section class="cta">
-  <h2>Explorar café</h2>
+  <a href="#" class="btn-explore">EXPLORAR COLECCIÓN</a>
 </section>
 
-<footer class="footer">
-  <p>© Umbral Tostadores</p>
+<footer class="footer border-top">
+  <p>© 2026 Umbral Tostadores — Local Roasters</p>
 </footer>
 
 <script src="main.js"></script>
