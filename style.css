@@ -1,107 +1,134 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Inter', sans-serif;
   color: #111;
-  background: #fff;
 }
 
-/* Header */
+/* HEADER */
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
   position: fixed;
   width: 100%;
-  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  z-index: 10;
+  mix-blend-mode: difference;
+  color: white;
 }
 
-.header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #111;
-}
-
-/* Hero */
+/* HERO */
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e') center/cover;
+  background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') center/cover;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: flex-end;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+  position: relative;
+  padding: 40px;
+  max-width: 600px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
   color: white;
+  line-height: 1.1;
 }
 
-.hero p {
-  color: white;
-  margin-top: 10px;
+/* MANIFESTO */
+.manifesto {
+  padding: 100px 20px;
+  text-align: center;
 }
 
-/* Sections */
-section {
-  padding: 80px 20px;
-  max-width: 1100px;
+.manifesto p {
+  font-size: 1.8rem;
+  max-width: 600px;
   margin: auto;
 }
 
-h2 {
-  margin-bottom: 20px;
-  font-weight: 600;
+/* SPLIT */
+.split {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Products */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+.split .image {
+  height: 300px;
+  background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') center/cover;
 }
 
-.card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+.split .content {
+  padding: 40px 20px;
 }
 
-.card h3 {
-  margin-top: 10px;
+/* COFFEE LIST */
+.coffee {
+  padding: 80px 20px;
+}
+
+.coffee-item {
+  margin-bottom: 40px;
+}
+
+.coffee-item h3 {
+  font-size: 1.5rem;
+}
+
+/* QUOTE */
+.quote {
+  padding: 100px 20px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.quote p {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
 }
 
 /* CTA */
 .cta {
+  padding: 120px 20px;
   text-align: center;
 }
 
-.cta button {
-  padding: 12px 24px;
-  border: none;
-  background: black;
-  color: white;
-  cursor: pointer;
+.cta h2 {
+  font-size: 2rem;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
-  text-align: center;
   padding: 40px;
-  font-size: 0.9rem;
+  text-align: center;
 }
 
-/* Responsive */
+/* DESKTOP */
 @media(min-width:768px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   .hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+
+  .split {
+    flex-direction: row;
+  }
+
+  .split .image,
+  .split .content {
+    width: 50%;
+  }
+
+  .split .image {
+    height: auto;
   }
 }
