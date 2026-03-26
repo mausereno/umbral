@@ -7,77 +7,87 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Tipografía estilo editorial -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Tipografía editorial -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="header">
   <div class="logo">UMBRAL</div>
-  <nav>
-    <a href="#">Café</a>
-    <a href="#">Proceso</a>
-    <a href="#">Nosotros</a>
-  </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <h1>Café tostado con precisión</h1>
-    <p>Exploramos el punto exacto entre origen y fuego</p>
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h1>
+      Entre el grano<br>
+      y el fuego<br>
+      existe un instante
+    </h1>
   </div>
 </section>
 
-<section class="about">
-  <h2>Nuestro enfoque</h2>
-  <p>
-    En Umbral buscamos ese instante donde el grano revela su identidad.
-    Trabajamos con productores y tostamos en pequeños lotes para mantener
-    claridad, dulzor y estructura.
-  </p>
-</section>
-
-<section class="products">
-  <h2>Cafés disponibles</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="">
-      <h3>Colombia Huila</h3>
-      <p>Frutos rojos · panela · cacao</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="">
-      <h3>Etiopía Natural</h3>
-      <p>Arándano · floral · brillante</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="">
-      <h3>México Chiapas</h3>
-      <p>Nuez · chocolate · balanceado</p>
-    </div>
+<!-- MANIFIESTO -->
+<section class="manifesto">
+  <div class="text">
+    <p>
+      No tostamos café.  
+      Observamos el momento en que cambia.
+    </p>
   </div>
 </section>
 
-<section class="process">
-  <h2>El tostado</h2>
+<!-- STORY SPLIT -->
+<section class="split">
+  <div class="image"></div>
+  <div class="content">
+    <h2>Precisión</h2>
+    <p>
+      Cada curva de tostado es una decisión.
+      Temperatura, aire y tiempo dialogan hasta encontrar el equilibrio.
+    </p>
+  </div>
+</section>
+
+<!-- CAFÉS -->
+<section class="coffee">
+  <h2>Cafés</h2>
+
+  <div class="coffee-item">
+    <h3>Colombia · Huila</h3>
+    <p>Panela · frutos rojos · cacao</p>
+  </div>
+
+  <div class="coffee-item">
+    <h3>Etiopía · Natural</h3>
+    <p>Arándano · floral · brillante</p>
+  </div>
+
+  <div class="coffee-item">
+    <h3>México · Chiapas</h3>
+    <p>Nuez · chocolate · limpio</p>
+  </div>
+</section>
+
+<!-- CITA -->
+<section class="quote">
   <p>
-    Cada curva de tostado es diseñada para resaltar el carácter del origen.
-    Controlamos temperatura, flujo de aire y tiempo para lograr consistencia
-    en cada lote.
+    “El tostado no transforma el café,  
+    revela lo que ya estaba ahí.”
   </p>
 </section>
 
+<!-- CTA -->
 <section class="cta">
-  <h2>Explora el umbral</h2>
-  <button>Comprar café</button>
+  <h2>Explorar café</h2>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Umbral Tostadores</p>
+  <p>© Umbral Tostadores</p>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
