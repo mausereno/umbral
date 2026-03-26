@@ -1,134 +1,180 @@
+:root {
+  --border-color: #d1d1d1;
+  --bg-color: #f9f9f9;
+  --text-color: #1a1a1a;
+}
+
 body {
   margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: 'Inter', sans-serif;
-  color: #111;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* UTILIDADES DE BORDE */
+.border-bottom { border-bottom: 1px solid var(--border-color); }
+.border-right { border-right: 1px solid var(--border-color); }
+.border-top { border-top: 1px solid var(--border-color); }
+
+.label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.6;
 }
 
 /* HEADER */
 .header {
   position: fixed;
+  top: 0;
   width: 100%;
-  padding: 20px;
-  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+  z-index: 100;
   mix-blend-mode: difference;
   color: white;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') center/cover;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
+.logo {
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.overlay {
+/* HERO SLIDER */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100svh; /* Small Viewport Height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slides {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  z-index: 1;
 }
 
-.hero-text {
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active { opacity: 1; }
+
+.hero-content {
   position: relative;
-  padding: 40px;
-  max-width: 600px;
+  z-index: 2;
+  text-align: center;
+  color: white;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  color: white;
-  line-height: 1.1;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  line-height: 1;
+  font-weight: 400;
 }
 
-/* MANIFESTO */
+.italic { font-style: italic; font-family: 'Playfair Display', serif; }
+
+/* SECCIONES EDITORIALES */
+.grid-container {
+  max-width: 100%;
+}
+
 .manifesto {
-  padding: 100px 20px;
+  padding: 8rem 2rem;
   text-align: center;
 }
 
 .manifesto p {
-  font-size: 1.8rem;
-  max-width: 600px;
-  margin: auto;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-family: 'Playfair Display', serif;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* SPLIT */
 .split {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.split .image {
-  height: 300px;
-  background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') center/cover;
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .split .content {
-  padding: 40px 20px;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* COFFEE LIST */
-.coffee {
-  padding: 80px 20px;
+/* COFFEE GRID */
+.coffee-grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .coffee-item {
-  margin-bottom: 40px;
+  padding: 4rem 2rem;
 }
 
 .coffee-item h3 {
-  font-size: 1.5rem;
-}
-
-/* QUOTE */
-.quote {
-  padding: 100px 20px;
-  background: black;
-  color: white;
-  text-align: center;
-}
-
-.quote p {
-  font-size: 1.8rem;
   font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.origin {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 
 /* CTA */
 .cta {
-  padding: 120px 20px;
+  padding: 10rem 2rem;
   text-align: center;
 }
 
-.cta h2 {
-  font-size: 2rem;
+.btn-explore {
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  padding: 1.5rem 4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  transition: all 0.4s;
 }
 
-/* FOOTER */
-.footer {
-  padding: 40px;
-  text-align: center;
+.btn-explore:hover {
+  background: var(--text-color);
+  color: white;
 }
 
-/* DESKTOP */
-@media(min-width:768px) {
-
-  .hero h1 {
-    font-size: 5rem;
-  }
-
-  .split {
-    flex-direction: row;
-  }
-
-  .split .image,
-  .split .content {
-    width: 50%;
-  }
-
-  .split .image {
-    height: auto;
-  }
+/* RESPONSIVE DESKTOP */
+@media (min-width: 768px) {
+  .split { grid-template-columns: 1fr 1fr; }
+  .coffee-grid { grid-template-columns: 1fr 1fr 1fr; }
+  
+  .header { padding: 2rem 4rem; }
+  .manifesto, .split .content, .coffee-item { padding: 6rem 4rem; }
 }
