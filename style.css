@@ -83,7 +83,6 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
   font-size: clamp(2.5rem, 8vw, 6rem);
   line-height: 1;
   font-weight: 400;
@@ -103,7 +102,6 @@ body {
 
 .manifesto p {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  font-family: 'Playfair Display', serif;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -138,7 +136,6 @@ body {
 }
 
 .coffee-item h3 {
-  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin: 0.5rem 0;
 }
