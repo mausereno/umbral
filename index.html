@@ -45,26 +45,24 @@
     </div>
   </section>
 
-  <section class="coffee border-bottom">
-    <div class="label">03 / Selección</div>
-    <div class="coffee-grid">
-      <div class="coffee-item border-right">
-        <span class="origin">Colombia</span>
-        <h3>Huila</h3>
-        <p>Panela · Frutos rojos · Cacao</p>
-      </div>
-      <div class="coffee-item border-right">
-        <span class="origin">Etiopía</span>
-        <h3>Natural</h3>
-        <p>Arándano · Floral · Brillante</p>
-      </div>
-      <div class="coffee-item">
-        <span class="origin">México</span>
-        <h3>Chiapas</h3>
-        <p>Nuez · Chocolate · Limpio</p>
-      </div>
+<section class="coffee border-bottom">
+  <div class="label">03 / Selección</div>
+  
+  <div class="filters-container border-bottom">
+    <div class="filter-row">
+      <span class="filter-label">Proceso:</span>
+      <div class="chip-group" id="chip-procesos"></div>
     </div>
-  </section>
+    <div class="filter-row">
+      <span class="filter-label">Notas:</span>
+      <div class="chip-group" id="chip-notas"></div>
+    </div>
+  </div>
+
+  <div class="coffee-grid" id="coffee-grid">
+    </div>
+</section>
+
 
   <section class="quote border-bottom">
     <p>“El tostado no transforma el café, revela lo que ya estaba ahí.”</p>
