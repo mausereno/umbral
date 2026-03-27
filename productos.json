@@ -1,0 +1,43 @@
+[
+  {
+    "id": "01",
+    "Productor": "Jesús Martínez y familia",
+    "Finca": "Finca Los Chuchos",
+    "Localidad": "Zongolica",
+    "Región": "Veracruz",
+    "Altitud": "1200 m.s.n.m.",
+    "Varietal": "Sarchimor",
+    "Categoría": "Honey",
+    "Proceso": "Fermentación Anaeróbica de 72 horas",
+    "Secado": "Secado en camas bajo sombra",
+    "img": "img/01.jpg",
+    "Notas": ["caramelo", "nuez", "fruta seca"]
+  },
+  {
+    "id": "02",
+    "Productor": "Fermín Temoxtle",
+    "Finca": null,
+    "Localidad": "Eloxochitlán",
+    "Región": "Puebla",
+    "Altitud": "1700 m.s.n.m.",
+    "Varietal": "Obata",
+    "Categoría": "Natural",
+    "Proceso": "Fermentación tradicional",
+    "Secado": "Camas africanas al media sombra",
+    "img": "img/02.jpg",
+    "Notas": ["cacao", "frutos rojos", "flores de azahar"]
+  },
+  {
+    "id": "03",
+    "Productor": "Cooperativa Yirgacheffe",
+    "Finca": "Varios",
+    "Localidad": "Gedeo",
+    "Región": "Yirgacheffe",
+    "Altitud": "1900 m.s.n.m.",
+    "Varietal": "Heirloom",
+    "Categoría": "Natural",
+    "Proceso": "Secado al sol",
+    "Secado": "Camas africanas",
+    "Notas": ["arándano", "floral", "brillante"]
+  }
+]
