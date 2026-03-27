@@ -145,11 +145,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const div = document.createElement('div');
       div.className = 'coffee-item border-right';
       div.innerHTML = `
-        <span class="origin">${item.Región}</span>
+        <span class="origin">${item.Localidad}, ${item.Región}</span>
         <h3>${item.Categoría}</h3>
-        <p>${notasFormat}</p>
+        <p>${item.Productor} — ${item.Varietal}</p>
         <p style="font-size: 0.7rem; opacity: 0.6; margin-top: 1rem;">
-          ${item.Productor} — ${item.Varietal}
+         ${notasFormat}
         </p>
       `;
       gridContainer.appendChild(div);
