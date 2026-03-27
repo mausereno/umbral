@@ -29,15 +29,15 @@
   },
   {
     "id": "03",
-    "Productor": "Cooperativa Yirgacheffe",
-    "Finca": "Varios",
-    "Localidad": "Gedeo",
-    "Región": "Yirgacheffe",
-    "Altitud": "1900 m.s.n.m.",
-    "Varietal": "Heirloom",
-    "Categoría": "Natural",
-    "Proceso": "Secado al sol",
-    "Secado": "Camas africanas",
-    "Notas": ["arándano", "floral", "brillante"]
+    "Productor": "Familia Guzmán",
+    "Finca": "Finca Santa Cruz",
+    "Localidad": "La Concordia",
+    "Región": "Chiapas",
+    "Altitud": "1200 m.s.n.m.",
+    "Varietal": "Maragogipe",
+    "Categoría": "Lavado",
+    "Proceso": null,
+    "Secado": null,
+    "Notas": ["Especias", "Toronja", "Fruta de hueso"]
   }
 ]
