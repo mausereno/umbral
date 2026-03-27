@@ -37,6 +37,7 @@ body {
   z-index: 100;
   mix-blend-mode: difference;
   color: white;
+  background-color: var(--bg-color);
 }
 
 .logo {
