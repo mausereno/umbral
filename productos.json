@@ -12,7 +12,7 @@
     "Secado": "Secado en camas bajo sombra",
     "img": "img/01.jpg",
     "Notas": ["caramelo", "nuez", "fruta seca"],
-    "onClick": "/honey-sarchimor-los-chuchos"
+    "onClick": "/honey-sarchimor-los-chuchos.html"
   },
   {
     "id": "02",
