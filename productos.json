@@ -1,0 +1,47 @@
+[
+  {
+    "id": "01",
+    "Productor": "Jesús Martínez y familia",
+    "Finca": "Finca Los Chuchos",
+    "Localidad": "Zongolica",
+    "Región": "Veracruz",
+    "Altitud": "9000 - 12000 m.s.n.m.",
+    "Varietal": "Sarchimor",
+    "Categoría": "Honey",
+    "Proceso": "Fermentación Anaeróbica de 72 horas",
+    "Secado": "Secado en camas bajo sombra",
+    "Imagen": "img/p-01.webp",
+    "Notas": ["Caramelo", "Nuez", "Fruta seca"],
+    "onClick": "/honey-sarchimor-los-chuchos.html"
+  },
+  {
+    "id": "02",
+    "Productor": "Varios microproductores",
+    "Finca": null,
+    "Localidad": "Córdoba",
+    "Región": "Veracruz",
+    "Altitud": "900 - 1400 m.s.n.m.",
+    "Varietal": "Bourbon, typica y catimor",
+    "Categoría": "Descafeinado orgánico",
+    "Proceso": "Descafeinado orgánico",
+    "Secado": null,
+    "Imagen": "img/m-01.webp",
+    "Notas": ["Ciruela", "Caramelo", "Manzana roja"],
+    "onClick": "/descafeinado-cordoba.html"
+  },
+  {
+    "id": "03",
+    "Productor": "Familia Guzmán",
+    "Finca": "Finca Santa Cruz",
+    "Localidad": "La Concordia",
+    "Región": "Chiapas",
+    "Altitud": "1200 m.s.n.m.",
+    "Varietal": "Marago",
+    "Categoría": "Lavado",
+    "Imagen": "img/m-01.webp",
+    "Proceso": null,
+    "Secado": null,
+    "Notas": ["Especias", "Toronja", "Fruta de hueso"],
+    "onClick": "/lavado-marago-familia-guzman.html"
+  }
+]
