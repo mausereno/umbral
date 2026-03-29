@@ -12,7 +12,7 @@
     "Secado": "Secado en camas bajo sombra",
     "Imagen": "img/p-01.webp",
     "Notas": ["Caramelo", "Nuez", "Fruta seca"],
-    "onClick": "/honey-sarchimor-los-chuchos.html"
+    "onClick": "umbral/honey-sarchimor-los-chuchos.html"
   },
   {
     "id": "02",
@@ -27,7 +27,7 @@
     "Secado": null,
     "Imagen": "img/m-01.webp",
     "Notas": ["Ciruela", "Caramelo", "Manzana roja"],
-    "onClick": "/descafeinado-cordoba.html"
+    "onClick": "umbral/descafeinado-cordoba.html"
   },
   {
     "id": "03",
@@ -42,6 +42,6 @@
     "Proceso": null,
     "Secado": null,
     "Notas": ["Especias", "Toronja", "Fruta de hueso"],
-    "onClick": "/lavado-marago-familia-guzman.html"
+    "onClick": "umbral/lavado-marago-familia-guzman.html"
   }
 ]
